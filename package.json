@@ -1,0 +1,12 @@
+{
+  "name": "musty player",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^42.5.0",
+    "music-metadata": "^11.13.0"
+  }
+}
