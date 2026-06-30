@@ -136,12 +136,17 @@ body {
   height: Calc(100% - 55px);
   overflow-y: auto;
 }
+.main-content-body {
+  height: calc(100% - 65px);
+}
 /* song list */
 .song-list {
   width: 100%;
-  height: Calc(100% - 55px);
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  height: 100%;
   overflow-y: auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .song-control {
   display: flex;
@@ -166,22 +171,42 @@ body {
   width: calc(100% - 10px);
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 0px 10px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   border-radius: 10px;
-  margin: 0px 5px;
+  margin: 5px 5px;
   background-color: #242424;
   transition: all 0.3s;
 }
+.song-info {
+  width: 100%;
+  margin-top: -5px;
+}
+.metaData {
+  width: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.Song-duration {
+  width: max-content;
+  float: right;
+  text-align: right;
+}
+.song-duration {
+  width: max-content !important;
+}
 .song-info span {
-  width: 140px;
+  width: 20%;
   float: left;
   color: #fff;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 15px;
 }
 #control-bar-and-tagImage-and-prograss-bar {
   width: Calc(100% - 20px);
@@ -260,6 +285,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mainPlayer {
+  display: none;
 }
 #Player-controler button {
   width: 60px;
