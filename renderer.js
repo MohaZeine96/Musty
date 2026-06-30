@@ -89,7 +89,7 @@ const handleFilesLoad = async (event) => {
             : song_item[oldPlaying].classList?.remove("playing");
           mainPlayer.play();
           song_item[i].classList.add("playing");
-          play.children[0].src = "img/icons8-pause-50.png";
+          play.children[0].src = "img/pause.png";
 
           // Display album art
           console.log("Album Art:", currentTrack.albumArt);
@@ -110,10 +110,10 @@ handleFilesLoad();
 play.addEventListener("click", () => {
   if (mainPlayer.paused) {
     mainPlayer.play();
-    play.children[0].src = "img/icons8-pause-50.png";
+    play.children[0].src = "img/pause.png";
   } else {
     mainPlayer.pause();
-    play.children[0].src = "img/icons8-play-50.png";
+    play.children[0].src = "img/play.png";
   }
 });
 function formatTime(seconds) {

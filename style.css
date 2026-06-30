@@ -23,8 +23,8 @@ body {
 }
 #aside {
   width: calc(300px - 10px);
+  height: calc(100% - 5px);
   margin-left: 10px;
-  height: 100%;
   border-radius: 10px;
   background-color: #242424;
   float: left;
@@ -302,12 +302,20 @@ body {
   border: none;
   margin: 0px 10px;
 }
+#Player-controler img {
+  width: 35px;
+}
 #Player-controler #play {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
+  transition: 0.5ms linear;
 }
 #Player-controler #play img {
   width: 100%;
+}
+#next img,
+#prev img {
+  width: 30px;
 }
 #artTag {
   max-width: 130px;
